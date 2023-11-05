@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cinzel&family=DM+Serif+Display&family=Gluten&family=Josefin+Slab:ital,wght@0,400;1,600&family=Lobster&family=Nanum+Myeongjo:wght@700&family=Pacifico&family=Playfair+Display&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
+<title>BTL Images Beyond The Line</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+  </head>
+<style>
+.top-menu{
+position:absolute;
+left:0;
+top:0;
+height:130px;
+width:100%;
+background:#FF6C22;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+padding:5px
+}
+.image-flex h2{
+position:absolute;
+top:50%;
+text-decoration:none;
+color:white;
+text-shadow:2px 2px 4px #333;
+
+}
+.image-flex{
+position:relative;
+display:flex;
+justify-content:center;
+}
+.image{
+width:300px;
+height:300px;
+border-radius:50%:
+}
+.image img{
+height:100%;
+width:100%;
+border-radius:50%;
+
+}
+h2{
+text-decoration:underline;
+color:white;
+text-shadow:2px 2px 4px #333;
+}
+p,h2{
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+font-weight:bold;
+}
+section{
+width:100%;
+height:auto;
+}
+.h1-flex{
+display:flex;
+justify-content:center;
+}
+.one{
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+font-weight:bold;
+}
+.two{
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-weight:bold;
+font-size:50px;
+
+}
+#li-icon{
+font-size:18px;
+position:relative;
+top:5px;
+}
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  
+  z-index: 100000;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background:black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+overflow-x:auto;
+  position: absolute;
+  width: 500px;
+height:800px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background:white; #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.menu-two{
+text-align:center;
+}
+#menu-icon{
+position:relative;
+top:3px;
+}
+.menu-com{
+width:100px;
+height:100px;
+}
+.menu-com img{
+width:100%;
+height:100%;
+}
+.menu-com-flex{
+display:flex;
+justify-content:center;
+gap:2rem;
+}
+.menu-comtwo{
+width:35px;
+height:35px;
+background:#419197;
+ filter: invert(100%);
+border-radius:5px;
+
+}
+.menu-comtwo img{
+width:100%;
+height:100%;
+border-radius:5px;
+}
+.menu-end{
+position:relative;
+height:200px;
+}
+.menu-com-end{
+width:170px;
+height:170px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.menu-com-end img{
+width:100%;
+height:100%;
+filter: invert(100%);
+}
+@media(max-width:768px){
+.two{
+font-size:40px;
+}
+.body{
+text-align:center;
+}
+.image-flex h2{
+position:absolute;
+font-size:17px;
+top:50%;
+text-decoration:none;
+color:white;
+text-shadow:2px 2px 4px #333;
+}
+}
+</style>
+  <body>
+<nav role="navigation">
+  <div id="menuToggle">
+   
+    <input type="checkbox" />
+   
+    <span></span>
+    <span></span>
+    <span></span>
+   
+    <ul id="menu">
+<div class="top-menu">
+</div>
+<div class="a-space">
+      <a href="index.html"><li><div class="material-symbols-outlined" id="menu-icon">
+home_app_logo
+</div>Home</li></a>
+      <a href="about.html"><li><div class="material-symbols-outlined" id="menu-icon">
+read_more
+</div>About</li></a>
+      <a href="btlinfo.html"><li><div class="material-symbols-outlined" id="menu-icon">
+info
+</div>BTL.Info</li></a>
+      <a href="contact.html"><li><div class="material-symbols-outlined" id="menu-icon">
+perm_phone_msg
+</div>Contact</li></a>
+      <a href="package.html"><li>Tour Package</li></a>
+<a href="images.html"><li>Tour Images</li></a>
+</div>
+<br>
+ <div class="menu-two">
+<h3>Company Collaboration<h3>
+</div>   
+<div class="menu-com-flex">
+<div class="menu-com">
+<img src="man.png">
+</div>
+<div class="menu-com">
+<img src="end-logo.png">
+</div>
+</div>
+
+
+
+
+ <a href="feedback.html"><li><div class="material-symbols-outlined" id="menu-icon">
+rate_review
+</div>Feedback</li></a>
+      <a href="cpolicies.html"><li><div class="material-symbols-outlined" id="menu-icon">
+notification_multiple
+</div>Company-Policies</li></a>
+      <a href="rights.html"><li><div class="material-symbols-outlined" id="menu-icon">
+copyright
+</div>Rights-Reserved/Cookies</li></a>
+      <a href="terms and condition.html"><li><div class="material-symbols-outlined" id="menu-icon">
+vpn_lock
+</div>Terms&Condition</li></a>
+<br>
+<h4 style="text-align:center;">Connect With Us</h4>
+<div class="menu-com-flex">
+<div class="menu-comtwo">
+<img src="insta.png">
+</div>
+<div class="menu-comtwo">
+<img src="face.png">
+</div>
+<div class="menu-comtwo">
+<a href="https://www.gmail.com"><img src="gmail.png" alt="gmail"></a>
+</div>
+</div>
+<br>
+<div class="menu-end">
+<div class="menu-com-end">
+<img src="man.png">
+</div>
+</div>
+</ul>
+
+  </div>
+</nav>
+<div class="body">
+<section>
+<div class="h1-flex">
+<h1 class="one">Tour</h1><h1 class="two">Images</h1></div>
+<br>
+<p>At Beyond Treeline, our commitment to creating memorable experiences and providing exceptional services is at the core of everything we do. Our mission is to take our customers on extraordinary journeys that leave them with lasting happiness and cherished memories. Here's how our customers find joy and satisfaction in the services we offer</p>
+<div class="image-flex">
+<h2>Mountain Trip With Clients</h2>
+<div class="image">
+<img src="img6.jpeg">
+</div></div>
+
+<h2>Tailored Experiences</h2>
+<p>We understand that every traveler is unique with distinct preferences and desires. Our expert team takes the time to tailor each journey to meet individual needs. This personalization ensures that our customers embark on adventures perfectly suited to their interests.</p>
+
+<h2>Professional Guides</h2>
+<p>Beyond Treeline is proud to have a team of highly knowledgeable and passionate guides who share their expertise and enthusiasm for the destinations we explore. Our guides make every tour informative, engaging, and safe, adding to our customers' enjoyment.</p>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img3.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img3.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img5.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<h2>Immersive Adventures</h2>
+<p>We offer a diverse range of tour packages, whether it's trekking through breathtaking mountains, unwinding on pristine beaches, or exploring the mysteries of deserts. Our customers revel in immersive adventures that bring them closer to the wonders of nature and culture.</p>
+<h2>Safety and Comfort</h2>
+<p>Customer satisfaction goes hand in hand with their safety and comfort. We prioritize the well-being of our travelers, ensuring that they feel secure and at ease throughout their journey, so they can fully savor the experience.</p>
+<h2>Positive Feedback</h2>
+<p>The positive feedback and testimonials from our customers speak volumes about the joy they experience with Beyond Treeline. Many share their stories of discovering new horizons, forming lasting friendships, and feeling rejuvenated by our tours.</p>
+<h2>Creating Lifelong Memories</h2>
+<p>Our aim is not just to provide a vacation but to create lifelong memories. Many of our customers return to explore more with us, and they often cite their previous experiences as the reason for their loyalty.</p>
+<h2>Easy Booking and Communication</h2>
+<p>We make booking and communication seamless for our customers. Our responsive customer support team is always ready to assist, ensuring that customers have a smooth and stress-free experience from planning to completion.</p>
+<h2>Environmental Responsibility</h2>
+<p>Our commitment to responsible and sustainable travel resonates with our customers. They take joy in knowing that their adventures with Beyond Treeline have a positive impact on the environment and local communities.</p>
+
+</section>
+    
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
