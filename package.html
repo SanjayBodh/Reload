@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cinzel&family=DM+Serif+Display&family=Gluten&family=Josefin+Slab:ital,wght@0,400;1,600&family=Lobster&family=Nanum+Myeongjo:wght@700&family=Pacifico&family=Playfair+Display&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
+<title>BTL Packages Beyond The Line</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+.top-menu{
+position:absolute;
+left:0;
+top:0;
+height:130px;
+width:100%;
+background:#FF6C22;
+}
+html{
+scroll-behavior:smooth;
+}
+.footer{
+padding:0;
+width:100%;
+height:600px;
+z-index:2;
+top400px;
+position:relative;
+background:yellow;
+background:#419197;
+ filter: invert(100%);
+border-radius: 20px 20px 0 0;
+}
+
+.footer-logo{
+position:absolute;
+top:18%;
+left:50%;
+transform:translate(-50%,-50%);
+background:green;
+width:200px;
+height:200px;
+border-radius:50%;
+}
+.footer-logo img{
+height:100%;
+width:100%;
+
+}
+.footer h2{
+text-align:center;
+position:absolute;
+top:40%;
+left:50%;
+transform:translate(-50%,-50%);
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+width:100%;
+}
+
+
+.h3-footer-flex{
+display:flex;
+justify-content:center;
+gap:4rem;
+position:absolute;
+width:100%;
+top:95%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.body{
+padding:10px;
+}
+body
+margin:0;
+padding10px;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,200,193,1) 0%, rgba(14,87,99,1) 50%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);
+
+        .package {
+            border:none; 1px solid #ccc;
+            padding:10px;
+            margin: 0px;
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .package h2 {
+            color: BLACK;
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+        }
+
+        .package p {
+            color: #333;
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+        }
+.package-img{
+width:300px;
+height:300px;
+overflow:hidden;
+transition:all ease 1s;
+border-radius:10px;
+}
+.package-img:hover img{
+transition:all 1s;
+scale:1.2;
+border-radius:10px;
+}
+.package-img img{
+height:100%;
+width:100%;
+transition:all 1s;
+border-radius:10px;
+}
+.p-2-flex{
+display:flex;
+justify-content:center;
+
+}
+.p-flex{
+display:flex;
+justify-content:center;
+backgroundgreen;
+gap:1rem;
+}
+.p-flex .package{
+width:500px;
+}
+.h1-flex{
+display:flex;
+justify-content:center;
+}
+.packages{
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-size:50px;
+font-weight:bold;
+}
+.tour{
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+}
+#li-icon{
+font-size:18px;
+position:relative;
+top:5px;
+}
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  
+  z-index: 100000;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background:black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+overflow-x:auto;
+  position: absolute;
+  width: 500px;
+height:800px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background:white; #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+font-family: 'Abril Fatface', serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gluten', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Young Serif', serif;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.menu-two{
+text-align:center;
+}
+#menu-icon{
+position:relative;
+top:3px;
+}
+.menu-com{
+width:100px;
+height:100px;
+}
+.menu-com img{
+width:100%;
+height:100%;
+}
+.menu-com-flex{
+display:flex;
+justify-content:center;
+gap:2rem;
+}
+.menu-comtwo{
+width:35px;
+height:35px;
+background:#419197;
+ filter: invert(100%);
+border-radius:5px;
+
+}
+.menu-comtwo img{
+width:100%;
+height:100%;
+border-radius:5px;
+}
+.menu-end{
+position:relative;
+height:200px;
+}
+.menu-com-end{
+width:170px;
+height:170px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.menu-com-end img{
+width:100%;
+height:100%;
+filter: invert(100%);
+}
+@media(max-width:768px){
+.p-flex{
+display:flex;
+flex-direction:column;
+justify-content:center;
+backgroundgreen;
+}
+.p-2-flex{
+display:grid;
+gap:1rem;
+}
+.p-flex .package{
+width:100%;
+}
+.package-img{
+width:100%;
+height:250px;
+}
+.packages{
+font-size:40px;
+}
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 25px;
+  left: 15px;
+  
+  z-index: 100000;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menu{
+width:450px;
+height:900px;
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 17px;
+}
+
+#menuToggle span{
+background:black;
+}
+.h3-footer-flex h4{
+font-size:14px;
+}
+.h3-footer-flex{
+gap:1rem;
+}
+.body{
+align-items:center;
+text-align:center;
+place-items:center;
+justify-content:center;
+}
+}
+    </style>
+</head>
+<body>
+
+<nav role="navigation">
+  <div id="menuToggle">
+   
+    <input type="checkbox" />
+   
+    <span></span>
+    <span></span>
+    <span></span>
+   
+    <ul id="menu">
+<div class="top-menu">
+</div>
+      <a href="index.html"><li><div class="material-symbols-outlined" id="menu-icon">
+home_app_logo
+</div>Home</li></a>
+      <a href="about.html"><li><div class="material-symbols-outlined" id="menu-icon">
+read_more
+</div>About</li></a>
+      <a href="btlinfo.html"><li><div class="material-symbols-outlined" id="menu-icon">
+info
+</div>BTL.Info</li></a>
+      <a href="contact.html"><li><div class="material-symbols-outlined" id="menu-icon">
+perm_phone_msg
+</div>Contact</li></a>
+<a href="images.html"><li>Tour Images</li></a>
+<br>
+ <div class="menu-two">
+<h3>Company Collaboration<h3>
+</div>   
+<div class="menu-com-flex">
+<div class="menu-com">
+<img src="man.png">
+</div>
+<div class="menu-com">
+<img src="end-logo.png">
+</div>
+</div>
+
+
+
+
+ <a href="feedback.html"><li><div class="material-symbols-outlined" id="menu-icon">
+rate_review
+</div>Feedback</li></a>
+      <a href="cpolicies.html"><li><div class="material-symbols-outlined" id="menu-icon">
+notification_multiple
+</div>Company-Policies</li></a>
+      <a href="rights.html"><li><div class="material-symbols-outlined" id="menu-icon">
+copyright
+</div>Rights-Reserved/Cookies</li></a>
+      <a href="terms and condition.html"><li><div class="material-symbols-outlined" id="menu-icon">
+vpn_lock
+</div>Terms&Condition</li></a>
+<br>
+<h4 style="text-align:center;">Connect With Us</h4>
+<div class="menu-com-flex">
+<div class="menu-comtwo">
+<img src="insta.png">
+</div>
+<div class="menu-comtwo">
+<img src="face.png">
+</div>
+<div class="menu-comtwo">
+<a href="https://www.gmail.com"><img src="gmail.png" alt="gmail"></a>
+</div>
+</div>
+<br>
+<div class="menu-end">
+<div class="menu-com-end">
+<img src="man.png">
+</div>
+</div>
+</ul>
+
+  </div>
+</nav>
+<div class="body">
+<div class="h1-flex">
+<h1 class="tour">Tour</h1><h1 class="packages">Packages</h1>
+</div>
+<div class="p-flex">
+<div class="package-img">
+<img src="img6.jpeg">
+</div>
+    <div id="mountain" class="package">
+        <h2>MOUNTAINEERING</h2>
+        <p>Explore the Mountains </p>
+        <p>Price 1200</p>
+    </div>
+</div>
+<br>
+<div class="p-flex">
+    <div id="hiking" class="package">
+        <h2>HIKING</h2>
+        <p>Explore the Mountains</p>
+        <p>Price: 1900</p>
+    </div>
+<div class="package-img">
+<img src="img6.jpeg">
+</div>
+</div>
+<br>
+<div class="p-flex">
+<div class="package-img">
+<img src="img6.jpeg">
+</div>
+    <div id="para-package" class="package">
+        <h2>PARAGLIDING</h2>
+        <p>Explore the Mountains</p>
+        <p>Price: 1544</p>
+    </div>
+</div>
+<br>
+<div class="p-flex">
+    <div id="rafting" class="package">
+        <h2>RAFTING</h2>
+        <p>Explore the Mountains</p>
+        <p>Price: 1254</p>
+    </div>
+<div class="package-img">
+<img src="img6.jpeg">
+</div>
+</div>
+<br>
+<div class="p-2-flex">
+    <div class="package">
+        <h2>Package 2</h2>
+        <p>Beach Paradise</p>
+        <p>Price: 249</p>
+    </div>
+
+    <div class="package">
+        <h2>Package 3</h2>
+        <p>Desert Adventure</p>
+        <p>Price: 179</p>
+    </div>
+
+    <div class="package">
+        <h2>Package 4</h2>
+        <p>Cultural Excursion</p>
+        <p>Price: 319</p>
+    </div>
+
+    <div class="package">
+        <h2>Package 5</h2>
+        <p>Wildlife Safari</p>
+        <p>Price: 299</p>
+    </div>
+</div>
+</div>   
+<div class="footer">
+<div class="footer-logo">
+<img src="man.png" alt="com-logo">
+</div>
+<h2>Beyond The Line</h2>
+<div class="h3-footer-flex">
+<h4>Copyrights All Reserved By(S.B)</h4>
+<h4>Tersm&Condition<br>(2023)</h4>
+<h4>Cookies</h4>
+</div>
+</div>
+<a href="index.php"><input type="submit" name="" value="log out" style="padding:10px;cursor:pointer;"></a>
+</body>
+</html>
